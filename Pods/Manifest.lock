@@ -1,0 +1,10 @@
+PODS:
+  - SSDataKit (0.3.9)
+
+DEPENDENCIES:
+  - SSDataKit (~> 0.3)
+
+SPEC CHECKSUMS:
+  SSDataKit: cd6f5a01d7e5ec8958c0846fd51d6386ad57d0fb
+
+COCOAPODS: 0.35.0

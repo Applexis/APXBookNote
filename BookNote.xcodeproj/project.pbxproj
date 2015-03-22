@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BDF83F9E3D51348247B16C4 /* libPods-BookNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A078CEEEC16DCF815D754B /* libPods-BookNote.a */; };
 		FAC563431ABF2D7800333DBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC563421ABF2D7800333DBE /* main.m */; };
 		FAC563461ABF2D7800333DBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC563451ABF2D7800333DBE /* AppDelegate.m */; };
 		FAC563491ABF2D7800333DBE /* BookNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAC563471ABF2D7800333DBE /* BookNote.xcdatamodeld */; };
-		FAC5634C1ABF2D7800333DBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC5634B1ABF2D7800333DBE /* ViewController.m */; };
 		FAC5634F1ABF2D7800333DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC5634D1ABF2D7800333DBE /* Main.storyboard */; };
 		FAC563511ABF2D7800333DBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC563501ABF2D7800333DBE /* Images.xcassets */; };
 		FAC563541ABF2D7800333DBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC563521ABF2D7800333DBE /* LaunchScreen.xib */; };
 		FAC563601ABF2D7800333DBE /* BookNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC5635F1ABF2D7800333DBE /* BookNoteTests.m */; };
+		FAC563731ABF2F8800333DBE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC563721ABF2F8800333DBE /* MainViewController.m */; };
+		FAC563761ABF312500333DBE /* BookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC563751ABF312500333DBE /* BookListViewController.m */; };
+		FAC563791ABF33F900333DBE /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC563781ABF33F900333DBE /* Section.m */; };
+		FAC5637C1ABF33FA00333DBE /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC5637B1ABF33FA00333DBE /* Book.m */; };
+		FAC5637F1ABF368500333DBE /* BNManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC5637E1ABF368500333DBE /* BNManagedObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +33,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7065C3F7CB085CA09268B27B /* Pods-BookNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookNote/Pods-BookNote.debug.xcconfig"; sourceTree = "<group>"; };
+		AAADC454E7102F0EE656D85D /* Pods-BookNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookNote/Pods-BookNote.release.xcconfig"; sourceTree = "<group>"; };
+		D0A078CEEEC16DCF815D754B /* libPods-BookNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC5633D1ABF2D7800333DBE /* BookNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC563411ABF2D7800333DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC563421ABF2D7800333DBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAC563441ABF2D7800333DBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAC563451ABF2D7800333DBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FAC563481ABF2D7800333DBE /* BookNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookNote.xcdatamodel; sourceTree = "<group>"; };
-		FAC5634A1ABF2D7800333DBE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FAC5634B1ABF2D7800333DBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FAC5634E1ABF2D7800333DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAC563501ABF2D7800333DBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAC563531ABF2D7800333DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FAC563591ABF2D7800333DBE /* BookNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC5635E1ABF2D7800333DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC5635F1ABF2D7800333DBE /* BookNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookNoteTests.m; sourceTree = "<group>"; };
+		FAC563711ABF2F8800333DBE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FAC563721ABF2F8800333DBE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FAC563741ABF312500333DBE /* BookListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListViewController.h; sourceTree = "<group>"; };
+		FAC563751ABF312500333DBE /* BookListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListViewController.m; sourceTree = "<group>"; };
+		FAC563771ABF33F900333DBE /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
+		FAC563781ABF33F900333DBE /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		FAC5637A1ABF33FA00333DBE /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		FAC5637B1ABF33FA00333DBE /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		FAC5637D1ABF368500333DBE /* BNManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNManagedObject.h; sourceTree = "<group>"; };
+		FAC5637E1ABF368500333DBE /* BNManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNManagedObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDF83F9E3D51348247B16C4 /* libPods-BookNote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +79,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88A990C4BF552AA33966CD7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0A078CEEEC16DCF815D754B /* libPods-BookNote.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99DF484901F4873A3697C06F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7065C3F7CB085CA09268B27B /* Pods-BookNote.debug.xcconfig */,
+				AAADC454E7102F0EE656D85D /* Pods-BookNote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAC563341ABF2D7800333DBE = {
 			isa = PBXGroup;
 			children = (
+				FAC563691ABF2EC000333DBE /* Classes */,
 				FAC5633F1ABF2D7800333DBE /* BookNote */,
 				FAC5635C1ABF2D7800333DBE /* BookNoteTests */,
 				FAC5633E1ABF2D7800333DBE /* Products */,
+				99DF484901F4873A3697C06F /* Pods */,
+				88A990C4BF552AA33966CD7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,8 +122,6 @@
 			children = (
 				FAC563441ABF2D7800333DBE /* AppDelegate.h */,
 				FAC563451ABF2D7800333DBE /* AppDelegate.m */,
-				FAC5634A1ABF2D7800333DBE /* ViewController.h */,
-				FAC5634B1ABF2D7800333DBE /* ViewController.m */,
 				FAC5634D1ABF2D7800333DBE /* Main.storyboard */,
 				FAC563501ABF2D7800333DBE /* Images.xcassets */,
 				FAC563521ABF2D7800333DBE /* LaunchScreen.xib */,
@@ -122,6 +157,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FAC563691ABF2EC000333DBE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAC563701ABF2F4C00333DBE /* Category */,
+				FAC5636C1ABF2ED800333DBE /* Model */,
+				FAC5636B1ABF2ED100333DBE /* Controller */,
+				FAC5636A1ABF2EC500333DBE /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FAC5636A1ABF2EC500333DBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAC5636B1ABF2ED100333DBE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAC563711ABF2F8800333DBE /* MainViewController.h */,
+				FAC563721ABF2F8800333DBE /* MainViewController.m */,
+				FAC563741ABF312500333DBE /* BookListViewController.h */,
+				FAC563751ABF312500333DBE /* BookListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAC5636C1ABF2ED800333DBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5637D1ABF368500333DBE /* BNManagedObject.h */,
+				FAC5637E1ABF368500333DBE /* BNManagedObject.m */,
+				FAC5637A1ABF33FA00333DBE /* Book.h */,
+				FAC5637B1ABF33FA00333DBE /* Book.m */,
+				FAC563771ABF33F900333DBE /* Section.h */,
+				FAC563781ABF33F900333DBE /* Section.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAC563701ABF2F4C00333DBE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC563631ABF2D7800333DBE /* Build configuration list for PBXNativeTarget "BookNote" */;
 			buildPhases = (
+				CC63280BC3FF9B0AA5888EDA /* Check Pods Manifest.lock */,
 				FAC563391ABF2D7800333DBE /* Sources */,
 				FAC5633A1ABF2D7800333DBE /* Frameworks */,
 				FAC5633B1ABF2D7800333DBE /* Resources */,
+				167CE94D82B8271C4133EFD0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,15 +303,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		167CE94D82B8271C4133EFD0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookNote/Pods-BookNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC63280BC3FF9B0AA5888EDA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAC563391ABF2D7800333DBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC5637F1ABF368500333DBE /* BNManagedObject.m in Sources */,
 				FAC563461ABF2D7800333DBE /* AppDelegate.m in Sources */,
 				FAC563491ABF2D7800333DBE /* BookNote.xcdatamodeld in Sources */,
-				FAC5634C1ABF2D7800333DBE /* ViewController.m in Sources */,
 				FAC563431ABF2D7800333DBE /* main.m in Sources */,
+				FAC563761ABF312500333DBE /* BookListViewController.m in Sources */,
+				FAC563731ABF2F8800333DBE /* MainViewController.m in Sources */,
+				FAC5637C1ABF33FA00333DBE /* Book.m in Sources */,
+				FAC563791ABF33F900333DBE /* Section.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +468,11 @@
 		};
 		FAC563641ABF2D7800333DBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7065C3F7CB085CA09268B27B /* Pods-BookNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,9 +480,11 @@
 		};
 		FAC563651ABF2D7800333DBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAADC454E7102F0EE656D85D /* Pods-BookNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +543,7 @@
 				FAC563651ABF2D7800333DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAC563661ABF2D7800333DBE /* Build configuration list for PBXNativeTarget "BookNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +552,7 @@
 				FAC563681ABF2D7800333DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

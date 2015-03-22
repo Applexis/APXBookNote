@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "BookListViewController.h"
+#import "Book.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    [self.window makeKeyAndVisible];
+    
+    BookListViewController *booksViewController = [[BookListViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:booksViewController];
+    self.window.rootViewController = navController;
+    
+    // Test Code
+    NSManagedObjectContext *context = [Book mainQueueContext];
+    Book *book = [Book o]
+    
     return YES;
 }
 
