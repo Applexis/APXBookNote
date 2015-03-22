@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-BookNote-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BookNote-SSDataKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5F4007A2C03E6700B70EE190</key>
+		<key>9D084E8EB8116E8370347DAE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CDF7CB904F86D5EDC834B5E3</key>
+		<key>CF828092823CB048951A3015</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC2B7B14B0D6A37C08832BDC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

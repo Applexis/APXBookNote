@@ -4,6 +4,7 @@
 target 'BookNote' do
     
     pod 'SSDataKit', '~> 0.3'
+    pod 'AFNetworking', '~> 2.5'
 
 end
 

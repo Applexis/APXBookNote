@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CDF7CB904F86D5EDC834B5E3"
+               BlueprintIdentifier = "EC2B7B14B0D6A37C08832BDC"
                BuildableName = "libPods-BookNote-SSDataKit.a"
                BlueprintName = "Pods-BookNote-SSDataKit"
                ReferencedContainer = "container:Pods.xcodeproj">
