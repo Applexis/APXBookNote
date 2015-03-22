@@ -27,8 +27,10 @@
     self.window.rootViewController = navController;
     
     // Test Code
-    NSManagedObjectContext *context = [Book mainQueueContext];
-    Book *book = [Book o]
+    Book *book = [Book objectWithRemoteID:@1];
+    book.title = @"你的生存本能正在杀死你";
+    book.subtitle = @"为什么你容易焦虑、不安、恐慌和被激怒";
+    [book save];
     
     return YES;
 }

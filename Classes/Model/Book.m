@@ -11,15 +11,17 @@
 
 @implementation Book
 
-@dynamic name;
-@dynamic start_date;
+@dynamic title;
+@dynamic subtitle;
+@dynamic startDate;
 @dynamic author;
-@dynamic book_id;
+@dynamic remoteID;
+@dynamic sections;
 
 
 // override
 + (NSArray *)defaultSortDescriptors {
-    return @[[NSSortDescriptor sortDescriptorWithKey:@"book_id" ascending:YES]];
+    return @[[NSSortDescriptor sortDescriptorWithKey:@"remoteID" ascending:YES]];
 }
 
 @end

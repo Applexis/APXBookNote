@@ -20,6 +20,7 @@
 		FAC563791ABF33F900333DBE /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC563781ABF33F900333DBE /* Section.m */; };
 		FAC5637C1ABF33FA00333DBE /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC5637B1ABF33FA00333DBE /* Book.m */; };
 		FAC5637F1ABF368500333DBE /* BNManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC5637E1ABF368500333DBE /* BNManagedObject.m */; };
+		FAC563821ABF399200333DBE /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC563811ABF399200333DBE /* BookDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		FAC5637B1ABF33FA00333DBE /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		FAC5637D1ABF368500333DBE /* BNManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNManagedObject.h; sourceTree = "<group>"; };
 		FAC5637E1ABF368500333DBE /* BNManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNManagedObject.m; sourceTree = "<group>"; };
+		FAC563801ABF399200333DBE /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
+		FAC563811ABF399200333DBE /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 				FAC563721ABF2F8800333DBE /* MainViewController.m */,
 				FAC563741ABF312500333DBE /* BookListViewController.h */,
 				FAC563751ABF312500333DBE /* BookListViewController.m */,
+				FAC563801ABF399200333DBE /* BookDetailViewController.h */,
+				FAC563811ABF399200333DBE /* BookDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				FAC563731ABF2F8800333DBE /* MainViewController.m in Sources */,
 				FAC5637C1ABF33FA00333DBE /* Book.m in Sources */,
 				FAC563791ABF33F900333DBE /* Section.m in Sources */,
+				FAC563821ABF399200333DBE /* BookDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

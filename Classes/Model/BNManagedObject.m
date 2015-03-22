@@ -10,4 +10,6 @@
 
 @implementation BNManagedObject
 
+
+
 @end

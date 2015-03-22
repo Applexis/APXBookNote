@@ -1,43 +1,58 @@
 //
-//  BookListViewController.m
+//  BookDetailViewController.m
 //  BookNote
 //
 //  Created by applex on 15-3-23.
 //  Copyright (c) 2015年 cn.edu.sjtu. All rights reserved.
 //
 
-#import "BookListViewController.h"
-#import "Book.h"
 #import "BookDetailViewController.h"
+#import "Book.h"
+#import "Section.h"
 
-@interface BookListViewController ()
 
+@interface BookDetailViewController ()
 
 @end
 
-@implementation BookListViewController
+@implementation BookDetailViewController
+
+@dynamic book;
+
+- (Book *)book {
+    return (Book *)self.managedObject;
+}
+
+- (void)setManagedObject:(SSManagedObject *)managedObject {
+    [super setManagedObject:managedObject];
+    self.ignoreChange = YES;
+    [self.fetchedResultsController performFetch:nil];
+    [self.tableView reloadData];
+    self.ignoreChange = NO;
+    
+    self.title = self.book.title;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = NSLocalizedString(@"My Books", @"");
-    
+    self.title = self.book.title;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
 #pragma mark - Configuration
 
 - (Class)entityClass {
-    return [Book class];
+    return [Section class];
 }
 
 
 - (NSPredicate *)predicate {
-    return nil;
+    return [NSPredicate predicateWithFormat:@"book = %@", self.book];
 }
 
 
@@ -54,9 +69,8 @@
 #pragma mark - Working with Cells
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    Book *book = [self objectForViewIndexPath:indexPath];
-    cell.textLabel.text = book.title;
-    cell.detailTextLabel.text = book.subtitle;
+    Section *section = [self objectForViewIndexPath:indexPath];
+    cell.textLabel.text = [section.text substringToIndex:100];
 }
 
 
@@ -65,10 +79,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *const reuseIdentifier = @"BookListViewControllerCell";
+    static NSString *const reuseIdentifier = @"SectionListViewControllerCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     }
     
     [self configureCell:cell atIndexPath:indexPath];
@@ -77,16 +91,12 @@
 }
 
 
-#pragma mark - UITableViewDelegate 
+#pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     Book *book = [self objectForViewIndexPath:indexPath];
     
-    BookDetailViewController *detailViewController = [[BookDetailViewController alloc] init];
-    detailViewController.managedObject = book;
-    [self.navigationController pushViewController:detailViewController animated:YES];
 }
-
 
 @end

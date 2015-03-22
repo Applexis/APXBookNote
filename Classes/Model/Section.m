@@ -7,19 +7,21 @@
 //
 
 #import "Section.h"
+#import "Book.h"
 
 
 @implementation Section
 
-@dynamic section_id;
+@dynamic remoteID;
 @dynamic text;
 @dynamic date;
 @dynamic synced;
+@dynamic book;
 
 
 // override
 + (NSArray *)defaultSortDescriptors {
-    return @[[NSSortDescriptor sortDescriptorWithKey:@"section_id" ascending:YES]]
+    return @[[NSSortDescriptor sortDescriptorWithKey:@"remoteID" ascending:YES]];
 }
 
 @end

@@ -12,9 +12,13 @@
 
 @interface Book : SSRemoteManagedObject
 
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSDate * start_date;
+@property (nonatomic, retain) NSString * title;
+@property (nonatomic, retain) NSString * subtitle;
+@property (nonatomic, retain) NSDate * startDate;
 @property (nonatomic, retain) NSString * author;
-@property (nonatomic, retain) NSNumber *book_id;
+@property (nonatomic, retain) NSNumber *remoteID;
+
+// Relations
+@property (nonatomic, retain) NSSet *sections;
 
 @end
