@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5BDF83F9E3D51348247B16C4 /* libPods-BookNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A078CEEEC16DCF815D754B /* libPods-BookNote.a */; };
+		FAC515611ABF3F5C00FF76DC /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC515601ABF3F5C00FF76DC /* HttpClient.m */; };
 		FAC563431ABF2D7800333DBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC563421ABF2D7800333DBE /* main.m */; };
 		FAC563461ABF2D7800333DBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC563451ABF2D7800333DBE /* AppDelegate.m */; };
 		FAC563491ABF2D7800333DBE /* BookNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAC563471ABF2D7800333DBE /* BookNote.xcdatamodeld */; };
@@ -37,6 +38,8 @@
 		7065C3F7CB085CA09268B27B /* Pods-BookNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookNote/Pods-BookNote.debug.xcconfig"; sourceTree = "<group>"; };
 		AAADC454E7102F0EE656D85D /* Pods-BookNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookNote/Pods-BookNote.release.xcconfig"; sourceTree = "<group>"; };
 		D0A078CEEEC16DCF815D754B /* libPods-BookNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC5155F1ABF3F5C00FF76DC /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		FAC515601ABF3F5C00FF76DC /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
 		FAC5633D1ABF2D7800333DBE /* BookNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC563411ABF2D7800333DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC563421ABF2D7800333DBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +100,16 @@
 				AAADC454E7102F0EE656D85D /* Pods-BookNote.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAC5155E1ABF3F3600FF76DC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5155F1ABF3F5C00FF76DC /* HttpClient.h */,
+				FAC515601ABF3F5C00FF76DC /* HttpClient.m */,
+			);
+			name = Utils;
+			path = Util;
 			sourceTree = "<group>";
 		};
 		FAC563341ABF2D7800333DBE = {
@@ -163,6 +176,7 @@
 		FAC563691ABF2EC000333DBE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FAC5155E1ABF3F3600FF76DC /* Utils */,
 				FAC563701ABF2F4C00333DBE /* Category */,
 				FAC5636C1ABF2ED800333DBE /* Model */,
 				FAC5636B1ABF2ED100333DBE /* Controller */,
@@ -348,6 +362,7 @@
 			files = (
 				FAC5637F1ABF368500333DBE /* BNManagedObject.m in Sources */,
 				FAC563461ABF2D7800333DBE /* AppDelegate.m in Sources */,
+				FAC515611ABF3F5C00FF76DC /* HttpClient.m in Sources */,
 				FAC563491ABF2D7800333DBE /* BookNote.xcdatamodeld in Sources */,
 				FAC563431ABF2D7800333DBE /* main.m in Sources */,
 				FAC563761ABF312500333DBE /* BookListViewController.m in Sources */,

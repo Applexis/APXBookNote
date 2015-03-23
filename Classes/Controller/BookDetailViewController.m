@@ -9,11 +9,12 @@
 #import "BookDetailViewController.h"
 #import "Book.h"
 #import "Section.h"
+#import "HttpClient.h"
 
 
 @interface BookDetailViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property (nonatomic, strong) UINavigationItem *rightBarButtonItem;
+@property (nonatomic, strong) UIBarButtonItem *rightBarButtonItem;
 
 @end
 
@@ -49,9 +50,9 @@
 
 #pragma mark - Getter 
 
-- (UINavigationItem *)rightBarButtonItem {
+- (UIBarButtonItem *)rightBarButtonItem {
     if (!_rightBarButtonItem) {
-        _rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@"addSection:"];
+        _rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addSection:)];
     }
     return _rightBarButtonItem;
 }
@@ -134,8 +135,6 @@
 }
 
 
-// Not use now.
-/*
 - (void)selectPhoto:(UIButton *)sender {
     
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
@@ -145,7 +144,7 @@
     
     [self presentViewController:picker animated:YES completion:NULL];
 }
- */
+
 
 
 #pragma mark - UIImagePickerControllerDelegate
@@ -153,7 +152,19 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-//    self.imageView.image = chosenImage;
+    [HttpClient uploadImage:chosenImage success:^(id response){
+        NSString *string = [((NSDictionary *)response) objectForKey:@"text"];
+        if (string.length == 0) {
+            string = @"Parse Error";
+            return;
+        }
+        Section *section = [[Section alloc] init];
+        section.text = string;
+        section.book = self.book;
+        [section save];
+    } failure:^(NSError *error) {
+        
+    }];
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
 }

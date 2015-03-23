@@ -17,6 +17,7 @@
 @property (nonatomic, retain) NSDate * startDate;
 @property (nonatomic, retain) NSString * author;
 @property (nonatomic, retain) NSNumber *remoteID;
+@property (nonatomic, retain) NSDate *updatedAt;
 
 // Relations
 @property (nonatomic, retain) NSSet *sections;

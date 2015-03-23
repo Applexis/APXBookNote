@@ -19,6 +19,13 @@
 @dynamic book;
 
 
+- (void)setBook:(Book *)book {
+    [self willChangeValueForKey:@"book"];
+    [self setPrimitiveValue:book forKey:@"book"];
+    book.updatedAt = NSDate();
+    [self didChangeValueForKey:@"book"];
+}
+
 // override
 + (NSArray *)defaultSortDescriptors {
     return @[[NSSortDescriptor sortDescriptorWithKey:@"remoteID" ascending:YES]];

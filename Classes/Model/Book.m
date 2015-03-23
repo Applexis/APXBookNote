@@ -16,8 +16,8 @@
 @dynamic startDate;
 @dynamic author;
 @dynamic remoteID;
+@dynamic updatedAt;
 @dynamic sections;
-
 
 // override
 + (NSArray *)defaultSortDescriptors {
